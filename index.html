@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Volunteer Survey Form</title>
+	<link type="text/css" rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="header">
+		<h1 id="title">Volunteer Survey Form</h1>
+		<p id="description">We appreicate all the help and look forward to you supporting the school. Please fill out what volunteer options are the best for you.</p>
+		<p>Thank you!</p>
+	</div>
+
+	<form action="#" method="POST" id="survey-form">
+		<fieldset>
+			<h2>Volunteer Information</h2>
+			<label class="info" id="name-label">
+				Name
+				<input id="name" type="text" placeholder="Enter your name.." required>
+			</label>
+			<label class="info" id="email-label">
+				Email Address
+				<input id="email" type="email" placeholder="Enter your email address.." required>
+			</label>
+			<label class="info" id="number-label">
+				Age
+				<input id="number" type="number" placeholder="Enter your age.." min="14" max="18" required>
+			</label>
+			<label class="info">
+				Gender
+				<select id="dropdown_gender">
+					<option value="0" selected>-- select gender --</option>
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+				</select>
+			</label>
+			<label class="info">
+				Student Grade
+				<select id="dropdown_grade">
+					<option value="0" selected>-- select grade --</option>
+					<option value="8">Grade 8</option>
+					<option value="9">Grade 9</option>
+					<option value="10">Grade 10</option>
+					<option value="11">Grade 11</option>
+					<option value="12">Grade 12</option>
+				</select>
+			</label>
+		</fieldset>
+		<fieldset>
+			<h2>Oppurtunities</h2>
+			<label class="question">
+				Please pick your First Choice Committee:
+			</label>
+			<label>
+				<input type="radio" name="first_committee" class="inline" value="membership_committee">
+				Membership Committee
+			</label>
+			<label>
+				<input type="radio" name="first_committee" class="inline" value="fundraising_committee">
+				Fundraising Committee
+			</label>
+			<label>
+				<input type="radio" name="first_committee" class="inline" value="communication_committee">
+				Communication Committee
+			</label>
+			<label>
+				<input type="radio" name="first_committee" class="inline" value="carnival_committee">
+				Carnival Committee
+			</label>
+			
+			<label class="question">
+				Please pick your Second Choice Committee:
+			</label>
+			<label>
+				<input type="radio" name="second_committee" class="inline" value="membership_committee">
+				Membership Committee
+			</label>
+			<label>
+				<input type="radio" name="second_committee" class="inline" value="fundraising_committee">
+				Fundraising Committee
+			</label>
+			<label>
+				<input type="radio" name="second_committee" class="inline" value="communication_committee">
+				Communication Committee
+			</label>
+			<label>
+				<input type="radio" name="second_committee" class="inline" value="carnival_committee">
+				Carnival Committee
+			</label>
+
+			<label class="question">
+				Would you like to be on the board?
+				<select id="dropdown">
+					<option value="0" selected>-- select choice --</option>
+					<option value="yes">Yes</option>
+					<option value="no">No</option>
+				</select>
+			</label>
+
+			<label class="question">
+				Please check the following events you'd be interested in:
+			</label>
+			<label>
+				<input type="checkbox" name="events" class="inline" value="back_to_school_night">
+				Back to School Night
+			</label>
+			<label>
+				<input type="checkbox" name="events" class="inline" value="spring_carnival">
+				Spring Carnival
+			</label>
+			<label>
+				<input type="checkbox" name="events" class="inline" value="book_fair">
+				Book Fair
+			</label>
+			<label>
+				<input type="checkbox" name="events" class="inline" value="science_fair">
+				Science Fair
+			</label>
+			<label>
+				<input type="checkbox" name="events" class="inline" value="open_house">
+				Open House
+			</label>
+
+			<label class="question">
+				Any comments or suggestions?
+				<textarea rows="5" placeholder="Enter your comments here.."></textarea>
+			</label>
+
+		</fieldset>
+		<input type="submit" name="submit" value="Submit" id="submit">
+	</form>
+</body>
+</html>

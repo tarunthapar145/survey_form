@@ -1,0 +1,70 @@
+body {
+	/*background-color: #7ec7f7;*/
+	background-image: url(images/background_volunteer.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	margin: 0px 0px 17px 0px;
+	font-size: small;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+.header {
+	text-align: center;
+	color: white;
+	width: 60%;
+	margin: 0 auto;
+}
+
+form {
+	width: 70%;
+	max-width: 600px;
+	min-width: 400px;
+	/*background-color: #873fd4;*/
+	background-color: rgba(135,63,212,0.9);
+	margin: 0 auto;
+	border-radius: 10px;
+}
+
+fieldset {
+	border: none;
+}
+
+h2 {
+	text-align: center;
+}
+
+label {
+	display: block;
+	margin: 10px auto;
+}
+
+input,select,textarea {
+	width: 100%;
+	margin: 2px 0 2px 0;
+}
+
+.info {
+	font-size: medium;
+}
+
+.inline {
+	width: unset;
+	vertical-align: middle;
+}
+
+.question {
+	margin: 20px auto 10px auto;
+	font-size: medium;
+}
+
+input[type="submit"] {
+	height: 40px;
+	margin: 0px auto;
+	background-color: #37af65;
+	border: 1px solid white;
+	color: white;
+	font-size: 20px;
+	border-radius: 10px;
+}
